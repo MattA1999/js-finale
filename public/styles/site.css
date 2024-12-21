@@ -1,0 +1,128 @@
+/* Homepage */
+#wrapper{
+
+    background-color: skyblue;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 25px;
+}
+
+/* Homepage Menu List */
+#menu-list, ul{
+
+    border-top: 4px solid lightblue;
+    border-bottom: 4px solid lightblue;
+    list-style: none;
+    text-align: center;
+}
+
+#menu-list, li{
+
+    color: lightgoldenrodyellow;
+}
+
+/* "Menu" Title on Homepage*/
+
+.menu-title{
+
+    text-align: center;
+    color: lightgoldenrodyellow;
+    font-size: 450%;
+    padding-left: 30px;
+}
+
+.title{
+
+    text-align: center;
+    padding-right: 20px;
+    color: lightgoldenrodyellow;
+    font-size: 250%;
+}
+/* events homepage */
+
+#events-overview, ul{
+
+    border-top: 4px solid lightblue;
+    border-bottom: 4px solid lightblue;
+    list-style: none;
+    text-align: center;
+    color: lightgoldenrodyellow;
+}
+
+img{
+    margin-bottom: 10px;
+    border: 2px solid lightgoldenrodyellow;
+    border-style: dashed;
+}
+
+/* location links */
+a{  
+    text-decoration: none;
+}
+
+a:link{
+    color: lightblue;
+}
+
+a:visited{
+    color: lightgoldenrodyellow;
+}
+
+a:hover{
+    color: lightpink;
+}
+/* Admin Page */
+
+#admin-wrapper{
+
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 75px;
+}
+
+#menu-form{
+
+    background-color: white; /* Light background for the forms */
+    padding: 20px;
+    border: 1px solid lightgray; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    flex: 1; /* Each form takes equal width */
+    box-sizing: border-box; /* Includes padding and border in width */
+    margin-bottom: 25px;
+}
+
+#event-form{
+
+    background-color: white; /* Light background for the forms */
+    padding: 20px;
+    border: 1px solid lightgray; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    flex: 1; /* Each form takes equal width */
+    box-sizing: border-box; /* Includes padding and border in width */
+    margin-bottom: 25px;
+}
+
+form button, textarea, input {
+    
+    display: block; /* Ensures each input takes a new line within the form */
+    width: 100%; /* Full width of the form */
+    margin-bottom: 10px; /* Adds spacing between input fields */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* controls new menu item title */
+
+.admin-title{
+
+    color: lightgoldenrodyellow;
+}

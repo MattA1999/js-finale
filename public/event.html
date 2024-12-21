@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Terry's Tortillas Food Truck </h1></header>
+    <h2>Event Details</h2>
+
+    <section id="event-details">
+        <!--event details go here-->
+    </section>
+
+    <script>
+        const loadEventDetails = async () => {
+            const eventId = window.location.pathname.split('/').pop()  // Get event ID from URL
+
+            const response = await fetch(`/event/${eventId}`)
+
+            const event = await response.json()
+
+            //insert event details into page
+            const eventDetails = document.getElementById('event-details')
+            eventDetails.innerHTML = `
+                <h3>${event.name}</h3>
+                <p>Location: ${event.location}</p>
+                <p>Date: ${new Date(event.date).toLocaleDateString()}</p>
+                <p>Time: ${event.time}</p>
+            `
+        }
+        
+        //load details when page is ready
+        document.addEventListener('DOMContentLoaded', loadEventDetails)
+    </script>
+</body>
+</html>
